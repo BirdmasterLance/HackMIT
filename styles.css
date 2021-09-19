@@ -1,0 +1,32 @@
+body {
+    background-color: #96BAFF;
+    margin: 0;
+    height: 100%;
+}
+
+.top-bar {
+    background-color: #7C83FD;
+    float: top;
+    overflow: hidden;
+    position: relative;
+}
+
+.top-bar a {
+    float: right;
+    color: #000000;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 0px;
+    padding-right: 40px;
+    font-family: 'Paytone One';
+    font-size: 30pt;
+    text-align: center;
+    text-decoration: none;
+}
+
+.top-bar a.title {
+    float: left;
+    color: #000000;
+    padding-left: 30px;
+    padding-right: 30px;
+}
