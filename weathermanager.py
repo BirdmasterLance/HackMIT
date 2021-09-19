@@ -1,8 +1,20 @@
 from json.decoder import JSONDecodeError
 import urllib, json
 from urllib import request,error
+from bs4 import BeautifulSoup
 
 # http://climatedataapi.worldbank.org/climateweb/rest/v1/country/annualavg/tas/1980/1999/USA.json
+
+with open('website.html') as html_file:
+    soup = BeautifulSoup(html_file.read(), features='html.parser')
+    for tag in soup.find_all(id='country'):
+        tag.string + "test"
+    for tag in soup.find_all(id='time'):
+        tag.string + "test2"
+    for tag in soup.find_all(id='temp'):
+        tag.string + "test3"
+
+    new_text = soup.prettify()
 
 def get_temperature(self, monannul, start, end, iso) -> str:
         """

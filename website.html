@@ -13,12 +13,8 @@
         <a href="https://spectacle.hackmit.org/project/36">Made for HackMIT 2021</a>
     </div>
 
-    <div class="selected-stats">
-
-    </div>
-
     <form>
-        <input type="text" placeholder="insert ISO3 code">
+        <input type="text" id="ISO" placeholder="insert ISO3 code">
         <select name="monannul" id="monannul">
             <option value="Monthly">Monthly</option>
             <option value="Annually">Annually</option>
@@ -33,10 +29,16 @@
             <option value="2060-2079">2060-2079</option>
             <option value="2080-2099">2080-2099</option>
         </select>
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
     </form>
 
-    <script src="weathermanager.py"></script>
+    <div class="selected-stats" id="selected-stats">
+        <p id="country">Country: </p>
+        <p id="time">Time Range: </p>
+        <p id="temp">Average Temperature: </p>
+    </div>
+
+    <script src="weathermanager.js"></script>
 </body>
 
 </html>
